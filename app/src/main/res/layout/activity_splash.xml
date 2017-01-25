@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/barcolor"
+    tools:context="com.bazooca.bazooca.SplashActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-40dp"
+        android:background="@null"
+        android:src="@drawable/logo_bazooca"
+        android:text="" />
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:text="kjlkll;ll;ll"-->
+    <!--android:elevation="4dp"-->
+    <!--android:shadowDx="5"-->
+    <!--android:shadowColor=""-->
+    <!--android:shadowRadius="5"-->
+    <!--android:layout_margin="40dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_below="@+id/iv_logo"-->
+
+    <!--android:background="@drawable/edit_bg"/>-->
+</RelativeLayout>

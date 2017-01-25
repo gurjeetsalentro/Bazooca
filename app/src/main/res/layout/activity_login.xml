@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/toolbar"
+    android:fillViewport="true">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear"
+        android:id="@+id/linearLayout"
+        android:background="@color/barcolor">
+        <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@null"
+
+        android:src="@drawable/logo_bazooca"
+        android:text="" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextLabel"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_email"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHighlight="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextLabel"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+            <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_email"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/key_icon"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/white"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pass"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@drawable/login_icon"
+        android:drawablePadding="10dp"
+        android:paddingEnd="@dimen/_100sdp"
+        android:paddingLeft="@dimen/_100sdp"
+        android:paddingRight="@dimen/_100sdp"
+        android:paddingStart="@dimen/_100sdp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--<RelativeLayout -->
+        <!--android:id="@+id/activity_splash"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/barcolor"-->
+        <!--tools:context="com.bazooca.bazooca.SplashActivity">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_logo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="200dp"-->
+            <!--android:background="@null"-->
+
+            <!--android:src="@drawable/logo_bazooca"-->
+            <!--android:text="" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/iv_logo"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:background="@drawable/edit_bg"-->
+            <!--android:drawableLeft="@drawable/user_icon"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:hint="@string/enter_email"-->
+            <!--android:inputType="number"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="@color/lineColor"-->
+            <!--android:textColorHint="@color/lineColor"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_pass"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/edit_email"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:background="@drawable/edit_bg"-->
+            <!--android:drawableLeft="@drawable/key_icon"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:hint="@string/password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="@color/lineColor"-->
+            <!--android:textColorHint="@color/lineColor"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/edit_pass"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:background="@drawable/btn_bg"-->
+            <!--android:drawableLeft="@drawable/login_icon"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:paddingEnd="@dimen/_100sdp"-->
+            <!--android:paddingLeft="@dimen/_100sdp"-->
+            <!--android:paddingRight="@dimen/_100sdp"-->
+            <!--android:paddingStart="@dimen/_100sdp"-->
+            <!--android:text="@string/login"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="18sp" />-->
+
+
+        <!--&lt;!&ndash;android:background="@drawable/edit_bg"/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+</ScrollView>

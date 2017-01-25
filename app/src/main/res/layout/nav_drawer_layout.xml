@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="22dp"
+    android:background="@color/txtColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        android:padding="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cross" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/menu_bg"
+        android:drawableTop="@drawable/user"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/profile"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#747A1D" />
+
+    <Button
+        android:id="@+id/btn_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/menu_bg"
+        android:drawableTop="@drawable/truck_icon"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/delivery"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#747A1D" />
+</LinearLayout>

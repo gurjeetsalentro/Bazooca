@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maintoolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+    android:title="Login"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:titleTextAppearance="@style/Toolbar.TitleText">
+
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/back_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/plus_icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:src="@drawable/ic_addbtn"-->
+    <!--/>-->
+
+    <Button
+        android:id="@+id/btn_refuse"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yellow_btn_bg"
+        android:padding="5dp"
+        android:text="@string/refuse"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+</android.support.v7.widget.Toolbar>

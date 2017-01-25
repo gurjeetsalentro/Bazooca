@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bazooca</string>
+    <string name="cpf">CPF</string>
+    <string name="senha">Senha</string>
+    <string name="acessar">Acessar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="perfil">Perfil</string>
+    <string name="entregas">Entregas</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="profile">PROFILE</string>
+    <string name="delivery">DELIVERY</string>
+    <string name="_25_xb0_c">25° C</string>
+    <string name="collected_and_cancelled_deliveries">Collected and Cancelled Deliveries</string>
+    <string name="my_collections_amp_deliveries"><![CDATA[My Collections & Deliveries]]></string>
+    <string name="new_schedule">New Schedule</string>
+    <string name="refuse">REFUSE</string>
+    <array name="degree">&#xb0;</array>
+
+</resources>
