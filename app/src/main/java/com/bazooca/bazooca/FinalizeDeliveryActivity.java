@@ -12,12 +12,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import adapters.CollectAdapter;
 import pojoclasses.PojoCollectData;
 
-public class CollectActivity extends AppCompatActivity implements View.OnClickListener{
+public class FinalizeDeliveryActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView txt_header_name;
     private Toolbar toolbar;
     private ImageView back_icon;
@@ -29,10 +28,15 @@ public class CollectActivity extends AppCompatActivity implements View.OnClickLi
     private TextView tv_units;
     private TextView tv_dist_center;
     private TextView tv_dist_center_name;
-    private Button btn_finalize;
-    private RecyclerView recyclerView;
-    private CollectAdapter collectAdapter;
-    private ArrayList<PojoCollectData> collectDataList = new ArrayList<PojoCollectData>();
+    private Button btn_finish;
+    TextView tv_product_name;
+    TextView tv_nota_fiscal;
+    TextView tv_volumes;
+    ImageView iv_camera_product;
+    private ImageView iv_camera_volumes;
+    private TextView tv_nota_fiscal1;
+    private TextView tv_volumes1;
+    private ImageView iv_camera_nota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,10 +73,22 @@ public class CollectActivity extends AppCompatActivity implements View.OnClickLi
         tv_units = (TextView) findViewById(R.id.tv_units);
         tv_dist_center = (TextView) findViewById(R.id.tv_dist_center);
         tv_dist_center_name = (TextView) findViewById(R.id.tv_dist_center_name);
-        btn_finalize = (Button) findViewById(R.id.btn_finalize);
+        btn_finish = (Button) findViewById(R.id.btn_finish);
         tv_units = (TextView) findViewById(R.id.tv_units);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        //CheckBox checkBoxPriority;
+
+
+            tv_product_name = (TextView) findViewById(R.id.tv_product_name);
+            tv_nota_fiscal = (TextView) findViewById(R.id.tv_nota_fiscal);
+            tv_volumes = (TextView) findViewById(R.id.tv_volumes);
+        iv_camera_product = (ImageView) findViewById(R.id.iv_camera_product);
+        iv_camera_volumes = (ImageView) findViewById(R.id.iv_camera_volumes);
+        tv_nota_fiscal1 = (TextView) findViewById(R.id.tv_nota_fiscal1);
+        tv_volumes1 = (TextView) findViewById(R.id.tv_volumes1);
+        iv_camera_nota = (ImageView) findViewById(R.id.iv_camera_nota);
+
 
 
         linear_calender.setOnClickListener(this);
@@ -82,16 +98,6 @@ public class CollectActivity extends AppCompatActivity implements View.OnClickLi
         back_icon.setOnClickListener(this);
 
 //setAdapter
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(CollectActivity.this));
-        for(int i = 0; i< 20; i++)
-        {
-            PojoCollectData pojoCollectData = new PojoCollectData();
-            collectDataList.add(pojoCollectData);
-
-        }
-        collectAdapter = new CollectAdapter(CollectActivity.this, collectDataList);
-        recyclerView.setAdapter(collectAdapter);
 
 
 

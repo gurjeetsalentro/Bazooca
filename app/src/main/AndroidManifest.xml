@@ -19,7 +19,9 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".NewScheduleActivity" />
         <activity android:name=".CollectionsNDeliveries" />
-        <activity android:name=".CollectActivity"></activity>
+        <activity android:name=".CollectActivity" />
+        <activity android:name=".IdentificationActivity" />
+        <activity android:name=".FinalizeDeliveryActivity"></activity>
     </application>
 
 </manifest>

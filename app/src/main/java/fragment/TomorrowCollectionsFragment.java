@@ -14,6 +14,7 @@ package fragment;
         import android.widget.TextView;
         import android.widget.Toast;
 
+        import com.bazooca.bazooca.IdentificationActivity;
         import com.bazooca.bazooca.R;
 
         import org.json.JSONArray;
@@ -50,7 +51,11 @@ public class TomorrowCollectionsFragment extends Fragment {
 
         return v;
     }
-
+    private void identificationClick(View v)
+    {
+        Intent intent = new Intent(getActivity(), IdentificationActivity.class);
+        startActivity(intent);
+    }
     private void initializeView(View v) {
 
         recyclerView = (RecyclerView) v.findViewById(R.id.recycleView);

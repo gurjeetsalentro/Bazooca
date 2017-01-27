@@ -18,6 +18,8 @@
     <string name="my_collections_amp_deliveries"><![CDATA[My Collections & Deliveries]]></string>
     <string name="new_schedule">New Schedule</string>
     <string name="refuse">REFUSE</string>
+    <string name="collect">COLLECT</string>
+    <string name="finalize">FINALIZE</string>
     <array name="degree">&#xb0;</array>
 
 </resources>

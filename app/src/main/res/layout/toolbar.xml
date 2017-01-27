@@ -6,11 +6,10 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimary"
     android:minHeight="?attr/actionBarSize"
-    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
     android:title="Login"
     app:contentInsetLeft="0dp"
     app:contentInsetStart="0dp"
-    app:titleTextAppearance="@style/Toolbar.TitleText">
+    >
 
 
     <ImageView

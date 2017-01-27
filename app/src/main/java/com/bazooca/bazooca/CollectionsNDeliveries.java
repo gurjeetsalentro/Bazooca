@@ -1,5 +1,6 @@
 package com.bazooca.bazooca;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -38,6 +39,11 @@ public class CollectionsNDeliveries extends AppCompatActivity implements View.On
         setTitle("");
         initializeView();
 
+    }
+    public void identificationClick(View v)
+    {
+        Intent intent = new Intent(CollectionsNDeliveries.this, IdentificationActivity.class);
+        startActivity(intent);
     }
 
     private void initializeView() {

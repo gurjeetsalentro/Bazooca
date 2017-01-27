@@ -22,9 +22,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
 
 
-    private TextView tv_weather;
-    private TextView tv_date;
-    private TextView tv_temperature;
+
     private TextView tv_5Stars_count;
     private TextView tv_checked_count;
     private TextView tv_deliveries_count;

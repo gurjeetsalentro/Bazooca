@@ -96,17 +96,15 @@
             android:layout_below="@+id/linear_top"
             android:layout_centerHorizontal="true"
             android:weightSum="3"
-            android:background="@drawable/circle_btn"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="10dp">
+            >
 
             <LinearLayout
                 android:id="@+id/linear_schedule"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/circle_btn"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
@@ -143,7 +141,10 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_18sdp" />
             </LinearLayout>
-
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/grey"/>
 
             <LinearLayout
                 android:id="@+id/linear_my_collections"
@@ -151,9 +152,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/circle_btn"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <ImageView
                     android:layout_width="@dimen/_40sdp"
@@ -173,7 +174,10 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_18sdp" />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
             <LinearLayout
                 android:id="@+id/linear_cancelled_collections"
                 android:layout_width="match_parent"
@@ -181,8 +185,8 @@
                 android:layout_weight="1"
                 android:layout_below="@+id/linear_my_collections"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/circle_btn"
                 android:gravity="center"
+                android:padding="10dp"
                 android:orientation="vertical">
 
                 <ImageView

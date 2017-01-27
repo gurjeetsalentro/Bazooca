@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bazooca.bazooca.IdentificationActivity;
+import com.bazooca.bazooca.LoginActivity;
+import com.bazooca.bazooca.MainActivity;
 import com.bazooca.bazooca.R;
 
 import org.json.JSONArray;
@@ -49,6 +52,12 @@ public class TodayCollectionsFragment extends Fragment {
         initializeView(v);
 
         return v;
+    }
+
+    public void identificationClick(View v)
+    {
+        Intent intent = new Intent(getActivity(), IdentificationActivity.class);
+        startActivity(intent);
     }
 
     private void initializeView(View v) {
