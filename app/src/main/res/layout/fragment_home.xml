@@ -38,7 +38,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Tuesday, 3 2017"
-                    android:textColor="@color/lineColor" />
+                    android:textColor="@color/grey" />
             </LinearLayout>
 
             <LinearLayout
@@ -62,7 +62,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Cloudy"
-                    android:textColor="@color/lineColor" />
+                    android:textColor="@color/grey" />
             </LinearLayout>
 
             <LinearLayout
@@ -86,74 +86,71 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/_25_xb0_c"
-                    android:textColor="@color/lineColor" />
+                    android:textColor="@color/grey" />
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
-            android:id="@+id/linear_schedule"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="@dimen/_120sdp"
+            android:id="@+id/linear_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/linear_top"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
-            android:layout_weight="1"
+            android:weightSum="3"
             android:background="@drawable/circle_btn"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
 
-            <RelativeLayout
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp">
+            <LinearLayout
+                android:id="@+id/linear_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/circle_btn"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/clander_btn" />
+                <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/clander_btn" />
+
+                    <TextView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/red_circle_bg"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:background="@drawable/red_circle_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/new_schedule"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sdp" />
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:paddingLeft="@dimen/_10sdp"
-                android:paddingRight="@dimen/_10sdp"
-                android:text="@string/new_schedule"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_below"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linear_schedule"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:weightSum="2">
 
             <LinearLayout
                 android:id="@+id/linear_my_collections"
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_120sdp"
-                android:layout_below="@+id/linear_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="15dp"
                 android:background="@drawable/circle_btn"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -174,16 +171,16 @@
                     android:paddingRight="@dimen/_10sdp"
                     android:text="@string/my_collections_amp_deliveries"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/_18sdp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linear_cancelled_collections"
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_120sdp"
-                android:layout_below="@+id/linear_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/linear_my_collections"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="15dp"
                 android:background="@drawable/circle_btn"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -204,7 +201,7 @@
                     android:paddingRight="@dimen/_10sdp"
                     android:text="@string/collected_and_cancelled_deliveries"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/_18sdp" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
